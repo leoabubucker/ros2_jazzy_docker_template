@@ -73,7 +73,7 @@ whoami # this should return "ubuntu" and not your normal username
 ros2 # this should return usage information for the ros2 command, indicating ros2 was successfully sourced
 ```
 
-10. Open VSCode from your workspace
+10. Open VSCode from your workspace (run these commands from host, not inside the docker container)
 
 ```bash
 cd ./ros2-ws
@@ -92,6 +92,36 @@ VSCode should popup with a “Reopen in Container” button. If it does, click t
 ```bash
 whoami # this should return "ubuntu" and not your normal username
 ros2 # this should return usage information for the ros2 command, indicating ros2 was successfully sourced
+```
+13. Enjoy your new development environment
+
+## Using Git With Your Workspace
+The .gitignore in this project is meant to maintain its status as a reproducible template for any ROS2 Jazzy project. This means that it ignores all files and folders unique to a specific project. If you want to use Git to manage your ROS2 projects, add specific ROS2 packages inside of ros2-ws/src and make each package its own repository. This will allow you to use Git and this template repository. 
+
+## Docker Tips
+Stop the container
+```bash
+docker compose stop
+```
+
+Start the container
+```bash
+docker compose start
+```
+
+Launch a terminal inside the container
+```bash
+docker compose exec ros2 bash
+```
+
+Exit the terminal's container
+```bash
+exit
+```
+
+Re-build and launch the container
+``` bash
+docker compose up -d --build
 ```
 
 ## Contributors
