@@ -1,5 +1,5 @@
 # ROS2 Jazzy Docker Template
- - A template for ROS2 Jazzy development in a Ubuntu 24.04 (Noble) Docker environment. 
+A template for ROS2 Jazzy development in a Ubuntu 24.04 (Noble) Docker environment. 
 
 ## Compatibility
 This Docker environment has only been tested on Ubuntu 24.04 26.04 hosts at this time but likely should work on most Linux hosts. 
