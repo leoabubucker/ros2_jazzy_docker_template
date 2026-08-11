@@ -1,0 +1,23 @@
+{
+    "name": "ROS2 Jazzy",
+    "dockerComposeFile": "../../docker-compose.yml",
+    "service": "ros2",
+    "workspaceFolder": "/ros2-ws",
+
+    "shutdownAction": "none",
+
+    "customizations": {
+        "vscode": {
+            "extensions": [ 
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools",
+                "ms-python.python",
+                "ranch-hand-robotics.rde-ros-2",
+                "ranch-hand-robotics.urdf-editor",
+                "ms-python.vscode-pylance"
+            ]
+        }
+    },
+
+    "remoteUser": "ubuntu"
+}

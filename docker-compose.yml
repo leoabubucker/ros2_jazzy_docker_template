@@ -1,0 +1,26 @@
+services:
+  ros2:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+
+    container_name: ros2-jazzy
+
+    stdin_open: true
+    tty: true
+
+    network_mode: host
+
+    environment:
+      DISPLAY: ${DISPLAY}
+      QT_X11_NO_MITSHM: "1"
+      ROS_DOMAIN_ID: 10
+
+    volumes:
+      - ./ros2-ws:/ros2-ws # needed to save workspace changes on host and persist
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw # needed to run GUI apps in the container
+      - /dev:/dev # needed to access serial devices in the container
+      - /sys:/sys:ro # needed to access kernel and hardware info as read-only
+      - /run/udev:/run/udev:ro # needed to access udev rules in the container
+
+    working_dir: /ros2-ws
