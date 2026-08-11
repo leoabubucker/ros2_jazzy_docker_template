@@ -4,6 +4,8 @@
 ## Compatibility
 This Docker environment has only been tested on Ubuntu 24.04 26.04 hosts at this time but likely should work on most Linux hosts. 
 
+This installation process is meant for an Ubuntu host. You likely will have to change certain commands (notably in steps 1-4) to be compatible for your Linux distribution. 
+
 ## Usage & Contribution Guidelines 
 This codebase has been licensed with an MIT license to allow and promote free and open access to code that is useful for ROS2 development. 
 
