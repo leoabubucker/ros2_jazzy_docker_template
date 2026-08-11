@@ -57,7 +57,7 @@ sudo snap install code
 7. Clone this repository
 
 ```bash
-git clone git@github.com:[GITHUB_USERNAME]/ros2_jazzy_docker_template.git
+git clone git@github.com:leoabubucker/ros2_jazzy_docker_template.git
 ```
 
 8. Build the Docker Image
